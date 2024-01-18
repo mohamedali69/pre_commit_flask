@@ -16,6 +16,6 @@ def login():
         raise Exception("Invalid password")
 
     encoded_jwt = jwt.encode(
-        {"sub": 1, "name": "sergio"}, secret_token, algorithm="HS256"
+        {"sub": 1, "name": "dali"}, secret_token, algorithm="HS256"
     )
     return jsonify({"token": encoded_jwt})
